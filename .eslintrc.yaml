@@ -1,0 +1,12 @@
+extends:
+  - remcohaszing
+  - remcohaszing/jest
+  - remcohaszing/typechecking
+globals:
+  assert: true
+rules:
+  import/no-unresolved: off
+overrides:
+  - files:
+      - __fixtures__/*.tsx
+    extends: remcohaszing/dev
