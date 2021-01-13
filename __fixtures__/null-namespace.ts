@@ -1,3 +1,5 @@
+import { NamespacedElement } from '../src';
+
 export const input = {
   type: 'element',
   name: 'tag',

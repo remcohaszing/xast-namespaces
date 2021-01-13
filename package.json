@@ -29,7 +29,8 @@
     "xml"
   ],
   "scripts": {
-    "prepack": "tsc --project tsconfig.build.json"
+    "prepack": "tsc --project tsconfig.build.json",
+    "test": "jest"
   },
   "dependencies": {
     "@types/xast": "^1.0.0"
