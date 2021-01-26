@@ -8,6 +8,9 @@
 [![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
 [![jest](https://jestjs.io/img/jest-badge.svg)](https://jestjs.io)
 
+This library exposes a function which takes a [xast][] tree and attaches namespace information to
+each element.
+
 ## Installation
 
 ```sh
@@ -89,4 +92,4 @@ assert.deepStrictEqual(result, {
 });
 ```
 
-- [xast]: https://github.com/syntax-tree/xast
+[xast]: https://github.com/syntax-tree/xast
