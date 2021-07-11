@@ -5,6 +5,7 @@ extends:
 globals:
   assert: true
 rules:
+  no-restricted-globals: off
   import/no-unresolved: off
 overrides:
   - files:

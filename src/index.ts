@@ -161,9 +161,9 @@ function attachNamespacesRecursive(
 
   const attributes = element.attributes ? Object.entries(element.attributes) : [];
 
-  attributes.forEach(([name, value]) => {
+  for (const [name, value] of attributes) {
     if (value == null) {
-      return;
+      continue;
     }
     const [ns, loc] = splitNamespace(name);
     if (ns === 'xmlns') {
@@ -171,7 +171,7 @@ function attachNamespacesRecursive(
     } else if (!ns && loc === 'xmlns') {
       namespaces[''] = value;
     }
-  });
+  }
 
   const namespacedAttributes = attributes.map<NamespacedAttribute>(([name, value]) => {
     const [ns, loc] = splitNamespace(name);
