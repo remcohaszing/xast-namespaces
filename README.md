@@ -2,7 +2,7 @@
 
 > Attach namespace information to a xast XML element tree.
 
-[![build status](https://github.com/remcohaszing/xast-namespaces/workflows/CI/badge.svg)](https://github.com/remcohaszing/xast-namespaces/actions)
+[![build status](https://github.com/remcohaszing/xast-namespaces/workflows/ci.yaml/badge.svg)](https://github.com/remcohaszing/xast-namespaces/actions)
 [![codecov](https://codecov.io/gh/remcohaszing/xast-namespaces/branch/main/graph/badge.svg)](https://codecov.io/gh/remcohaszing/xast-namespaces)
 [![npm](https://img.shields.io/npm/v/xast-namespaces)](https://www.npmjs.com/package/xast-namespaces)
 [![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
