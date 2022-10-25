@@ -12,6 +12,7 @@
     "url": "https://github.com/remcohaszing/xast-namespaces/issues"
   },
   "homepage": "https://github.com/remcohaszing/xast-namespaces#readme",
+  "funding": "https://github.com/sponsors/remcohaszing",
   "type": "module",
   "exports": "./index.js",
   "files": [
