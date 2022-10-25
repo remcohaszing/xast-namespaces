@@ -2,14 +2,13 @@
 
 > Attach namespace information to a xast XML element tree.
 
-[![build status](https://github.com/remcohaszing/xast-namespaces/workflows/ci.yaml/badge.svg)](https://github.com/remcohaszing/xast-namespaces/actions)
+[![build status](https://github.com/remcohaszing/xast-namespaces/workflows/ci/badge.svg)](https://github.com/remcohaszing/xast-namespaces/actions)
 [![codecov](https://codecov.io/gh/remcohaszing/xast-namespaces/branch/main/graph/badge.svg)](https://codecov.io/gh/remcohaszing/xast-namespaces)
 [![npm](https://img.shields.io/npm/v/xast-namespaces)](https://www.npmjs.com/package/xast-namespaces)
 [![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
-[![jest](https://jestjs.io/img/jest-badge.svg)](https://jestjs.io)
 
-This library exposes a function which takes a [xast][] tree and attaches namespace information to
-each element.
+This library exposes a function which takes a [xast](https://github.com/syntax-tree/xast) tree and
+attaches namespace information to each element.
 
 ## Installation
 
@@ -92,4 +91,21 @@ assert.deepStrictEqual(result, {
 });
 ```
 
-[xast]: https://github.com/syntax-tree/xast
+## API
+
+### `attachNamespaces(tree)`
+
+Attach XML namespace data to a xast tree.
+
+#### Options
+
+- `tree` The document tree to attach namespace data to. If a `xast` root is passed, its element
+  child will be used.
+
+#### Returns
+
+A copy of the tree, but with namespace data attached.
+
+## License
+
+[MIT](LICENSE.md) © [Remco Haszing](https://github.com/remcohaszing)
