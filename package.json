@@ -1,6 +1,6 @@
 {
   "name": "xast-namespaces",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Attach namespace information to a xast XML element tree.",
   "author": "Remco Haszing <remcohaszing@gmail.com>",
   "license": "MIT",
