@@ -1,3 +1,4 @@
+import { Root } from 'xast';
 import { NamespacedElement } from 'xast-namespaces';
 
 export const input = (
@@ -5,7 +6,7 @@ export const input = (
     {{ type: 'instruction', name: 'xml' }}
     <foo />
   </>
-);
+) as Root;
 
 export const expected: NamespacedElement = {
   type: 'element',

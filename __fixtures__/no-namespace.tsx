@@ -1,6 +1,7 @@
+import { Element } from 'xast';
 import { NamespacedElement } from 'xast-namespaces';
 
-export const input = <tag attr="value" />;
+export const input = (<tag attr="value" />) as Element;
 
 export const expected: NamespacedElement = {
   type: 'element',

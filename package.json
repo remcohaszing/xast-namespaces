@@ -30,7 +30,7 @@
     "xml"
   ],
   "scripts": {
-    "prepack": "tsc --noEmit false",
+    "prepack": "tsc --build --clean && tsc --noEmit false",
     "test": "c8 tsx test.ts"
   },
   "dependencies": {

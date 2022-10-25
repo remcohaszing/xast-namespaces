@@ -1,10 +1,11 @@
+import { Element } from 'xast';
 import { NamespacedElement } from 'xast-namespaces';
 
 export const input = (
   <ns:parent xmlns:ns="https://ns.example">
     <ns:child ns:attr="value" />
   </ns:parent>
-);
+) as Element;
 
 export const expected: NamespacedElement = {
   type: 'element',
