@@ -127,7 +127,7 @@ export interface NamespacedElement extends Element {
 /**
  * Split an XML name into a namespace and local name.
  *
- * @param name - The string to split.
+ * @param name The string to split.
  * @returns A tuple of namespace and local name.
  */
 function splitNamespace(name: string): [string | undefined, string] {
@@ -142,8 +142,8 @@ function splitNamespace(name: string): [string | undefined, string] {
 /**
  * Recursively attach namespaces to each element in an XML element tree.
  *
- * @param element - The element to attach namespace information onto.
- * @param parentNamespaces - The namespaces that are inherited from the parent element.
+ * @param element The element to attach namespace information onto.
+ * @param parentNamespaces The namespaces that are inherited from the parent element.
  * @returns A copy of the node, but with namespace data attached.
  */
 function attachNamespacesRecursive(
@@ -203,7 +203,7 @@ function attachNamespacesRecursive(
 /**
  * Attach XML namespace data to a xast tree.
  *
- * @param tree - The document tree to attach namespace data to. If a xast root is passed, its
+ * @param tree The document tree to attach namespace data to. If a xast root is passed, its
  * element child will be used.
  * @returns A copy of the tree, but with namespace data attached.
  */

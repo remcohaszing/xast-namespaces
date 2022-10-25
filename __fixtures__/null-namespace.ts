@@ -1,4 +1,4 @@
-import { NamespacedElement } from '../src';
+import { NamespacedElement } from 'xast-namespaces';
 
 export const input = {
   type: 'element',

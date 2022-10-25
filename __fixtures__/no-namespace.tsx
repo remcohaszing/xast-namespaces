@@ -1,6 +1,4 @@
-import * as x from 'xastscript';
-
-import { NamespacedElement } from '../src';
+import { NamespacedElement } from 'xast-namespaces';
 
 export const input = <tag attr="value" />;
 

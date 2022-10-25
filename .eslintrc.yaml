@@ -1,12 +1,10 @@
 extends:
   - remcohaszing
-  - remcohaszing/jest
   - remcohaszing/typechecking
 globals:
   assert: true
 rules:
   no-restricted-globals: off
-  import/no-unresolved: off
 overrides:
   - files:
       - __fixtures__/*.tsx

@@ -1,6 +1,5 @@
 import { Element } from 'xast';
-
-import { NamespacedElement } from '../src';
+import { NamespacedElement } from 'xast-namespaces';
 
 export const input: Element = { type: 'element', name: 'tag', children: [] };
 
