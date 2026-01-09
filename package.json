@@ -10,7 +10,6 @@
   "funding": "https://github.com/sponsors/remcohaszing",
   "type": "module",
   "exports": "./dist/xast-namespaces.js",
-  "main": "./dist/xast-namespaces.js",
   "files": [
     "dist",
     "src"
