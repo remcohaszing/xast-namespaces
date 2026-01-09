@@ -19,27 +19,27 @@ npm install xast-namespaces
 ## Usage
 
 ```js
-import { attachNamespaces } from 'xast-namespaces';
+import { attachNamespaces } from 'xast-namespaces'
 
 const tree = {
   type: 'element',
   name: 'ns:parent',
   attributes: {
-    'xmlns:ns': 'https://ns.example',
+    'xmlns:ns': 'https://ns.example'
   },
   children: [
     {
       type: 'element',
       name: 'ns:child',
       attributes: {
-        'ns:attr': 'value',
+        'ns:attr': 'value'
       },
-      children: [],
-    },
-  ],
-};
+      children: []
+    }
+  ]
+}
 
-const result = attachNamespaces(tree);
+const result = attachNamespaces(tree)
 assert.deepStrictEqual(result, {
   type: 'element',
   name: 'ns:parent',
@@ -47,10 +47,10 @@ assert.deepStrictEqual(result, {
   namespaceURI: 'https://ns.example',
   localName: 'parent',
   namespaces: {
-    ns: 'https://ns.example',
+    ns: 'https://ns.example'
   },
   attributes: {
-    'xmlns:ns': 'https://ns.example',
+    'xmlns:ns': 'https://ns.example'
   },
   namespacedAttributes: [
     {
@@ -59,8 +59,8 @@ assert.deepStrictEqual(result, {
       namespace: 'xmlns',
       namespaceURI: undefined,
       localName: 'ns',
-      value: 'https://ns.example',
-    },
+      value: 'https://ns.example'
+    }
   ],
   children: [
     {
@@ -70,10 +70,10 @@ assert.deepStrictEqual(result, {
       namespaceURI: 'https://ns.example',
       localName: 'child',
       namespaces: {
-        ns: 'https://ns.example',
+        ns: 'https://ns.example'
       },
       attributes: {
-        'ns:attr': 'value',
+        'ns:attr': 'value'
       },
       namespacedAttributes: [
         {
@@ -82,13 +82,13 @@ assert.deepStrictEqual(result, {
           namespace: 'ns',
           namespaceURI: 'https://ns.example',
           localName: 'attr',
-          value: 'value',
-        },
+          value: 'value'
+        }
       ],
-      children: [],
-    },
-  ],
-});
+      children: []
+    }
+  ]
+})
 ```
 
 ## API
