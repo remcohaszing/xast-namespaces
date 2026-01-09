@@ -157,7 +157,7 @@ function attachNamespacesRecursive(
   const namespaces = { ...parentNamespaces }
 
   const getNamespaceURI = (ns?: string, defaultURI?: string): string | undefined => {
-    if (ns && Object.hasOwnProperty.call(namespaces, ns)) {
+    if (ns && Object.hasOwn(namespaces, ns)) {
       return namespaces[ns]
     }
     return defaultURI
