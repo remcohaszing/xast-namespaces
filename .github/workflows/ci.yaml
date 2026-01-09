@@ -57,6 +57,10 @@ jobs:
       - run: npm test
       - uses: codecov/codecov-action@v5
         if: ${{ matrix.node-version == 24 }}
+      - uses: codecov/codecov-action@v5
+        if: ${{ matrix.node-version == 24 }}
+        with:
+          report_type: test_results
 
   tsc:
     runs-on: ubuntu-latest
