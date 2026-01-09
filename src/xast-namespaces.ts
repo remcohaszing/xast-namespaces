@@ -133,12 +133,11 @@ export interface NamespacedElement extends Element {
  *   A tuple of namespace and local name.
  */
 function splitNamespace(name: string): [string | undefined, string] {
-  const split = name.split(':')
-  if (split.length === 1) {
-    return [, split[0]]
+  const index = name.indexOf(':')
+  if (index === -1) {
+    return [, name]
   }
-  const [namespace, ...localName] = split
-  return [namespace, localName.join(':')]
+  return [name.slice(0, index), name.slice(index + 1)]
 }
 
 /**
