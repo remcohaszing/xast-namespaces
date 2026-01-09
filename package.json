@@ -4,13 +4,8 @@
   "description": "Attach namespace information to a xast XML element tree.",
   "author": "Remco Haszing <remcohaszing@gmail.com>",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/remcohaszing/xast-namespaces.git"
-  },
-  "bugs": {
-    "url": "https://github.com/remcohaszing/xast-namespaces/issues"
-  },
+  "repository": "remcohaszing/xast-namespaces",
+  "bugs": "https://github.com/remcohaszing/xast-namespaces/issues",
   "homepage": "https://github.com/remcohaszing/xast-namespaces#readme",
   "funding": "https://github.com/sponsors/remcohaszing",
   "type": "module",
