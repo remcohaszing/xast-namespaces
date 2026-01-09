@@ -1,6 +1,6 @@
 import type { Root } from 'xast'
 
-export const input = (
+export default (
   <>
     {{ type: 'instruction', name: 'xml' }}
     <foo />

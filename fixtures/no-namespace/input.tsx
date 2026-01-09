@@ -1,1 +1,1 @@
-export const input = <tag attr="value" />
+export default <tag attr="value" />

@@ -1,1 +1,1 @@
-export const input = <tag xmlns="https://ns.example">Text content</tag>
+export default <tag xmlns="https://ns.example">Text content</tag>

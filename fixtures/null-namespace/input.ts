@@ -1,4 +1,4 @@
-export const input = {
+export default {
   type: 'element',
   name: 'tag',
   attributes: {

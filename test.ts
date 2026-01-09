@@ -10,8 +10,8 @@ testFixturesDirectory({
   prettier: true,
   tests: {
     async 'expected.json'(file) {
-      const { input } = await import(file.path)
-      const result = attachNamespaces(input)
+      const module = await import(file.path)
+      const result = attachNamespaces(module.default)
       return JSON.stringify(result, undefined, 2)
     }
   }
