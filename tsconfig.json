@@ -1,14 +1,14 @@
 {
+  "references": [{"path": "./tsconfig.build.json"}],
+  "exclude": ["src"],
   "compilerOptions": {
-    "declaration": true,
     "jsx": "react-jsx",
     "jsxImportSource": "xastscript",
-    "lib": ["es2020"],
-    "module": "node16",
+    "lib": ["esnext"],
+    "module": "nodenext",
     "noEmit": true,
-    "skipLibCheck": true,
     "strict": true,
-    "strictNullChecks": true,
-    "target": "es2018"
+    "target": "esnext",
+    "verbatimModuleSyntax": true
   }
 }

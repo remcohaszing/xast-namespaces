@@ -9,10 +9,11 @@
   "homepage": "https://github.com/remcohaszing/xast-namespaces#readme",
   "funding": "https://github.com/sponsors/remcohaszing",
   "type": "module",
-  "exports": "./index.js",
+  "exports": "./dist/xast-namespaces.js",
+  "main": "./dist/xast-namespaces.js",
   "files": [
-    "index.js",
-    "index.d.ts"
+    "dist",
+    "src"
   ],
   "keywords": [
     "namespace",
@@ -30,6 +31,7 @@
     "@types/xast": "^1.0.0"
   },
   "devDependencies": {
+    "@nodejs-loaders/tsx": "^1.0.0",
     "@remcohaszing/eslint": "^13.0.0",
     "@types/node": "^25.0.0",
     "c8": "^7.0.0",
