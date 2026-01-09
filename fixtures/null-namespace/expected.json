@@ -1,0 +1,25 @@
+{
+  "type": "element",
+  "name": "tag",
+  "attributes": {
+    "attr": "value",
+    "xmlns": null
+  },
+  "children": [],
+  "localName": "tag",
+  "namespaces": {},
+  "namespacedAttributes": [
+    {
+      "type": "attribute",
+      "name": "attr",
+      "value": "value",
+      "localName": "attr"
+    },
+    {
+      "type": "attribute",
+      "name": "xmlns",
+      "value": null,
+      "localName": "xmlns"
+    }
+  ]
+}

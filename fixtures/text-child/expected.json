@@ -1,0 +1,26 @@
+{
+  "type": "element",
+  "name": "tag",
+  "attributes": {
+    "xmlns": "https://ns.example"
+  },
+  "children": [
+    {
+      "type": "text",
+      "value": "Text content"
+    }
+  ],
+  "localName": "tag",
+  "namespaceURI": "https://ns.example",
+  "namespaces": {
+    "": "https://ns.example"
+  },
+  "namespacedAttributes": [
+    {
+      "type": "attribute",
+      "name": "xmlns",
+      "value": "https://ns.example",
+      "localName": "xmlns"
+    }
+  ]
+}

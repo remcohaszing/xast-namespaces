@@ -1,0 +1,32 @@
+{
+  "type": "element",
+  "name": "ns:tag",
+  "attributes": {
+    "ns:attr": "value",
+    "xmlns:ns": "https://ns.example"
+  },
+  "children": [],
+  "localName": "tag",
+  "namespace": "ns",
+  "namespaceURI": "https://ns.example",
+  "namespaces": {
+    "ns": "https://ns.example"
+  },
+  "namespacedAttributes": [
+    {
+      "type": "attribute",
+      "name": "ns:attr",
+      "value": "value",
+      "namespace": "ns",
+      "localName": "attr",
+      "namespaceURI": "https://ns.example"
+    },
+    {
+      "type": "attribute",
+      "name": "xmlns:ns",
+      "value": "https://ns.example",
+      "namespace": "xmlns",
+      "localName": "ns"
+    }
+  ]
+}

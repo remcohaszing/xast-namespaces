@@ -1,7 +1,7 @@
 import { define } from '@remcohaszing/eslint'
 
 export default define({
-  files: ['__fixtures__/*'],
+  files: ['fixtures/**/*.tsx'],
   rules: {
     'no-restricted-globals': 'off'
   }

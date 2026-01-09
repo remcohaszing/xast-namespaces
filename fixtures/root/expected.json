@@ -1,0 +1,9 @@
+{
+  "type": "element",
+  "name": "foo",
+  "attributes": {},
+  "children": [],
+  "localName": "foo",
+  "namespaces": {},
+  "namespacedAttributes": []
+}

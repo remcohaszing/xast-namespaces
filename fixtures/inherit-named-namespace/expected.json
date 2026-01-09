@@ -1,0 +1,48 @@
+{
+  "type": "element",
+  "name": "ns:parent",
+  "attributes": {
+    "xmlns:ns": "https://ns.example"
+  },
+  "children": [
+    {
+      "type": "element",
+      "name": "ns:child",
+      "attributes": {
+        "ns:attr": "value"
+      },
+      "children": [],
+      "localName": "child",
+      "namespace": "ns",
+      "namespaceURI": "https://ns.example",
+      "namespaces": {
+        "ns": "https://ns.example"
+      },
+      "namespacedAttributes": [
+        {
+          "type": "attribute",
+          "name": "ns:attr",
+          "value": "value",
+          "namespace": "ns",
+          "localName": "attr",
+          "namespaceURI": "https://ns.example"
+        }
+      ]
+    }
+  ],
+  "localName": "parent",
+  "namespace": "ns",
+  "namespaceURI": "https://ns.example",
+  "namespaces": {
+    "ns": "https://ns.example"
+  },
+  "namespacedAttributes": [
+    {
+      "type": "attribute",
+      "name": "xmlns:ns",
+      "value": "https://ns.example",
+      "namespace": "xmlns",
+      "localName": "ns"
+    }
+  ]
+}
