@@ -23,7 +23,8 @@
     "xml"
   ],
   "scripts": {
-    "prepack": "tsc --build --clean && tsc --noEmit false",
+    "prepack": "tsc --build",
+    "pretest": "tsc --build",
     "test": "c8 node --test"
   },
   "dependencies": {
