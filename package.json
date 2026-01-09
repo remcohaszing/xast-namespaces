@@ -24,7 +24,7 @@
   ],
   "scripts": {
     "prepack": "tsc --build --clean && tsc --noEmit false",
-    "test": "c8 tsx test.ts"
+    "test": "c8 node --test"
   },
   "dependencies": {
     "@types/xast": "^1.0.0"
@@ -38,9 +38,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.0",
     "eslint-plugin-react": "^7.0.0",
     "prettier": "^2.0.0",
-    "tsx": "^3.0.0",
     "typescript": "^4.0.0",
-    "uvu": "^0.5.0",
     "xastscript": "^3.0.0"
   }
 }

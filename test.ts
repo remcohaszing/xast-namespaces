@@ -1,7 +1,7 @@
-import { readdir } from 'fs/promises';
+import assert from 'node:assert/strict';
+import { readdir } from 'node:fs/promises';
+import { test } from 'node:test';
 
-import { test } from 'uvu';
-import * as assert from 'uvu/assert';
 import { Element } from 'xast';
 
 import { attachNamespaces, NamespacedElement } from './index.js';
@@ -20,5 +20,3 @@ for (const name of await readdir(fixtures)) {
     assert.equal(result, expected);
   });
 }
-
-test.run();
