@@ -1,7 +1,7 @@
-import { Element } from 'xast';
-import { NamespacedElement } from 'xast-namespaces';
+import type { Element } from 'xast'
+import type { NamespacedElement } from 'xast-namespaces'
 
-export const input: Element = { type: 'element', name: 'tag', children: [] };
+export const input: Element = { type: 'element', name: 'tag', children: [] }
 
 export const expected: NamespacedElement = {
   type: 'element',
@@ -11,5 +11,5 @@ export const expected: NamespacedElement = {
   localName: 'tag',
   namespaces: {},
   namespacedAttributes: [],
-  children: [],
-};
+  children: []
+}

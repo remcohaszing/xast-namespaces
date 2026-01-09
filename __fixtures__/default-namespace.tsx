@@ -1,7 +1,7 @@
-import { Element } from 'xast';
-import { NamespacedElement } from 'xast-namespaces';
+import type { Element } from 'xast'
+import type { NamespacedElement } from 'xast-namespaces'
 
-export const input = (<tag attr="value" xmlns="https://ns.example" />) as Element;
+export const input = (<tag attr="value" xmlns="https://ns.example" />) as Element
 
 export const expected: NamespacedElement = {
   type: 'element',
@@ -10,11 +10,11 @@ export const expected: NamespacedElement = {
   namespaceURI: 'https://ns.example',
   localName: 'tag',
   namespaces: {
-    '': 'https://ns.example',
+    '': 'https://ns.example'
   },
   attributes: {
     attr: 'value',
-    xmlns: 'https://ns.example',
+    xmlns: 'https://ns.example'
   },
   namespacedAttributes: [
     {
@@ -23,7 +23,7 @@ export const expected: NamespacedElement = {
       namespace: undefined,
       namespaceURI: undefined,
       localName: 'attr',
-      value: 'value',
+      value: 'value'
     },
     {
       type: 'attribute',
@@ -31,8 +31,8 @@ export const expected: NamespacedElement = {
       namespace: undefined,
       namespaceURI: undefined,
       localName: 'xmlns',
-      value: 'https://ns.example',
-    },
+      value: 'https://ns.example'
+    }
   ],
-  children: [],
-};
+  children: []
+}

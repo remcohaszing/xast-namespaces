@@ -1,11 +1,11 @@
-import { Element } from 'xast';
-import { NamespacedElement } from 'xast-namespaces';
+import type { Element } from 'xast'
+import type { NamespacedElement } from 'xast-namespaces'
 
 export const input = (
   <ns:parent xmlns:ns="https://ns.example">
     <ns:child ns:attr="value" />
   </ns:parent>
-) as Element;
+) as Element
 
 export const expected: NamespacedElement = {
   type: 'element',
@@ -14,10 +14,10 @@ export const expected: NamespacedElement = {
   namespaceURI: 'https://ns.example',
   localName: 'parent',
   namespaces: {
-    ns: 'https://ns.example',
+    ns: 'https://ns.example'
   },
   attributes: {
-    'xmlns:ns': 'https://ns.example',
+    'xmlns:ns': 'https://ns.example'
   },
   namespacedAttributes: [
     {
@@ -26,8 +26,8 @@ export const expected: NamespacedElement = {
       namespace: 'xmlns',
       namespaceURI: undefined,
       localName: 'ns',
-      value: 'https://ns.example',
-    },
+      value: 'https://ns.example'
+    }
   ],
   children: [
     {
@@ -37,10 +37,10 @@ export const expected: NamespacedElement = {
       namespaceURI: 'https://ns.example',
       localName: 'child',
       namespaces: {
-        ns: 'https://ns.example',
+        ns: 'https://ns.example'
       },
       attributes: {
-        'ns:attr': 'value',
+        'ns:attr': 'value'
       },
       namespacedAttributes: [
         {
@@ -49,10 +49,10 @@ export const expected: NamespacedElement = {
           namespace: 'ns',
           namespaceURI: 'https://ns.example',
           localName: 'attr',
-          value: 'value',
-        },
+          value: 'value'
+        }
       ],
-      children: [],
-    },
-  ],
-};
+      children: []
+    }
+  ]
+}

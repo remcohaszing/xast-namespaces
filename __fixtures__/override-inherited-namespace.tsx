@@ -1,11 +1,11 @@
-import { Element } from 'xast';
-import { NamespacedElement } from 'xast-namespaces';
+import type { Element } from 'xast'
+import type { NamespacedElement } from 'xast-namespaces'
 
 export const input = (
   <ns:parent xmlns:ns="https://a.example">
     <ns:child ns:attr="value" xmlns:ns="https://b.example" />
   </ns:parent>
-) as Element;
+) as Element
 
 export const expected: NamespacedElement = {
   type: 'element',
@@ -14,10 +14,10 @@ export const expected: NamespacedElement = {
   namespaceURI: 'https://a.example',
   localName: 'parent',
   namespaces: {
-    ns: 'https://a.example',
+    ns: 'https://a.example'
   },
   attributes: {
-    'xmlns:ns': 'https://a.example',
+    'xmlns:ns': 'https://a.example'
   },
   namespacedAttributes: [
     {
@@ -26,8 +26,8 @@ export const expected: NamespacedElement = {
       namespace: 'xmlns',
       namespaceURI: undefined,
       localName: 'ns',
-      value: 'https://a.example',
-    },
+      value: 'https://a.example'
+    }
   ],
   children: [
     {
@@ -37,11 +37,11 @@ export const expected: NamespacedElement = {
       namespaceURI: 'https://b.example',
       localName: 'child',
       namespaces: {
-        ns: 'https://b.example',
+        ns: 'https://b.example'
       },
       attributes: {
         'ns:attr': 'value',
-        'xmlns:ns': 'https://b.example',
+        'xmlns:ns': 'https://b.example'
       },
       namespacedAttributes: [
         {
@@ -50,7 +50,7 @@ export const expected: NamespacedElement = {
           namespace: 'ns',
           namespaceURI: 'https://b.example',
           localName: 'attr',
-          value: 'value',
+          value: 'value'
         },
         {
           localName: 'ns',
@@ -58,10 +58,10 @@ export const expected: NamespacedElement = {
           namespace: 'xmlns',
           namespaceURI: undefined,
           type: 'attribute',
-          value: 'https://b.example',
-        },
+          value: 'https://b.example'
+        }
       ],
-      children: [],
-    },
-  ],
-};
+      children: []
+    }
+  ]
+}
