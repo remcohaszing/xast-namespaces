@@ -19,9 +19,6 @@
     "index.js",
     "index.d.ts"
   ],
-  "engines": {
-    "node": ">=14"
-  },
   "keywords": [
     "namespace",
     "namespaces",
