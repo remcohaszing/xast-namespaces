@@ -28,7 +28,7 @@
     "test": "c8 node --test"
   },
   "dependencies": {
-    "@types/xast": "^1.0.0"
+    "@types/xast": "^2.0.0"
   },
   "devDependencies": {
     "@nodejs-loaders/tsx": "^1.0.0",
@@ -38,6 +38,6 @@
     "prettier": "^3.0.0",
     "snapshot-fixtures": "^1.0.0",
     "typescript": "^5.0.0",
-    "xastscript": "^3.0.0"
+    "xastscript": "^4.0.0"
   }
 }

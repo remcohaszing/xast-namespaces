@@ -164,7 +164,7 @@ function attachNamespacesRecursive(
     return defaultURI
   }
 
-  const attributes = element.attributes ? Object.entries(element.attributes) : []
+  const attributes = Object.entries(element.attributes)
 
   for (const [name, value] of attributes) {
     if (value == null) {
