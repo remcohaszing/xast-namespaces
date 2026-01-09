@@ -38,7 +38,7 @@ export interface NamespacedAttribute {
    *
    * **Note**: It’s recommended to use `namespaceURI` instead.
    */
-  namespace?: string
+  namespace?: string | undefined
 
   /**
    * The namespace URI of the attribute.
@@ -48,7 +48,7 @@ export interface NamespacedAttribute {
    * The namespace URI can be determined by any of the ancestor element namespace configurations. If
    * an attribute doesn’t have an explicit namespace, it doesn’t have a namespace URI either.
    */
-  namespaceURI?: string
+  namespaceURI?: string | undefined
 
   /**
    * The value of the attribute.
@@ -82,7 +82,7 @@ export interface NamespacedElement extends Element {
    *
    * **Note**: It’s recommended to use `localName` and `namespaceURI` instead.
    */
-  namespace?: string
+  namespace?: string | undefined
 
   /**
    * The namespace URI of the element.
@@ -100,7 +100,7 @@ export interface NamespacedElement extends Element {
    * - Given the element `<foo:bar xmlns:foo="https://example.com" />`, the namespace URI is
    * `https://example.com`.
    */
-  namespaceURI?: string
+  namespaceURI?: string | undefined
 
   /**
    * A mapping of namespace names to namespace URIs in the context of position of the element in the
@@ -130,14 +130,14 @@ export interface NamespacedElement extends Element {
  * @param name
  *   The string to split.
  * @returns
- *   A tuple of namespace and local name.
+ *   A tuple of the local name and namespace.
  */
-function splitNamespace(name: string): [string | undefined, string] {
+function splitNamespace(name: string): [string, string?] {
   const index = name.indexOf(':')
   if (index === -1) {
-    return [, name]
+    return [name]
   }
-  return [name.slice(0, index), name.slice(index + 1)]
+  return [name.slice(index + 1), name.slice(0, index)]
 }
 
 /**
@@ -169,7 +169,7 @@ function attachNamespacesRecursive(
     if (value == null) {
       continue
     }
-    const [ns, loc] = splitNamespace(name)
+    const [loc, ns] = splitNamespace(name)
     if (ns === 'xmlns') {
       namespaces[loc] = value
     } else if (!ns && loc === 'xmlns') {
@@ -178,7 +178,7 @@ function attachNamespacesRecursive(
   }
 
   const namespacedAttributes = attributes.map<NamespacedAttribute>(([name, value]) => {
-    const [ns, loc] = splitNamespace(name)
+    const [loc, ns] = splitNamespace(name)
     return {
       type: 'attribute',
       name,
@@ -189,7 +189,7 @@ function attachNamespacesRecursive(
     }
   })
 
-  const [namespace, localName] = splitNamespace(element.name)
+  const [localName, namespace] = splitNamespace(element.name)
 
   return {
     ...element,

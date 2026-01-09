@@ -1,7 +1,8 @@
 {
-  "references": [{"path": "./tsconfig.build.json"}],
+  "references": [{ "path": "./tsconfig.build.json" }],
   "exclude": ["src"],
   "compilerOptions": {
+    "exactOptionalPropertyTypes": true,
     "jsx": "react-jsx",
     "jsxImportSource": "xastscript",
     "lib": ["esnext"],
