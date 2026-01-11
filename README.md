@@ -10,6 +10,15 @@
 This library exposes a function which takes a [xast](https://github.com/syntax-tree/xast) tree and
 attaches namespace information to each element.
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [API](#api)
+  - [`attachNamespaces(tree)`](#attachnamespacestree)
+- [Compatibility](#compatibility)
+- [License](#license)
+
 ## Installation
 
 ```sh
@@ -107,6 +116,10 @@ Attach XML namespace data to a xast tree.
 #### Returns
 
 A copy of the tree, but with namespace data attached.
+
+## Compatibility
+
+This project is compatible with Node.js 22 or greater.
 
 ## License
 
