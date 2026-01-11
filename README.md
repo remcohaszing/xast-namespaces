@@ -19,6 +19,8 @@ npm install xast-namespaces
 ## Usage
 
 ```js
+import assert from 'node:assert/strict'
+
 import { attachNamespaces } from 'xast-namespaces'
 
 const tree = {
